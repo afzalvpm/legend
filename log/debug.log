@@ -1,0 +1,566 @@
+[02/Jul/2016 17:29:28] ERROR [gunicorn.error:230] unexpected indent (models.py, line 18)
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 18
+    address = models.CharField(max_length=200,unique=True)
+    ^
+IndentationError: unexpected indent
+[02/Jul/2016 17:29:54] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py modified
+[02/Jul/2016 17:29:54] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py modified
+[02/Jul/2016 17:29:54] INFO [gunicorn.error:224] Worker exiting (pid: 46032)
+[02/Jul/2016 17:29:54] INFO [gunicorn.error:224] Worker exiting (pid: 46032)
+[02/Jul/2016 17:29:55] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+[02/Jul/2016 17:29:55] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+[02/Jul/2016 17:29:55] INFO [gunicorn.error:224] Worker exiting (pid: 46036)
+[02/Jul/2016 17:29:55] INFO [gunicorn.error:224] Worker exiting (pid: 46036)
+[02/Jul/2016 17:30:23] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+[02/Jul/2016 17:30:23] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicle.models import Company
+ImportError: No module named vehicle.models
+[02/Jul/2016 17:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 46044)
+[02/Jul/2016 17:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 46044)
+[02/Jul/2016 17:30:37] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicles.models import Company
+ImportError: cannot import name Company
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicles.models import Company
+ImportError: cannot import name Company
+[02/Jul/2016 17:30:37] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicles.models import Company
+ImportError: cannot import name Company
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py", line 3, in <module>
+    from app.vehicles.models import Company
+ImportError: cannot import name Company
+[02/Jul/2016 17:30:37] INFO [gunicorn.error:224] Worker exiting (pid: 46052)
+[02/Jul/2016 17:30:37] INFO [gunicorn.error:224] Worker exiting (pid: 46052)
+[02/Jul/2016 18:05:03] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py modified
+[02/Jul/2016 18:05:03] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/models.py modified
+[02/Jul/2016 18:05:03] INFO [gunicorn.error:224] Worker exiting (pid: 46383)
+[02/Jul/2016 18:05:03] INFO [gunicorn.error:224] Worker exiting (pid: 46383)
+[02/Jul/2016 18:05:09] INFO [gunicorn.error:224] Worker exiting (pid: 46435)
+[02/Jul/2016 18:05:09] INFO [gunicorn.error:224] Worker exiting (pid: 46435)
+[02/Jul/2016 18:18:20] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/admin.py modified
+[02/Jul/2016 18:18:20] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/admin.py modified
+[02/Jul/2016 18:18:20] INFO [gunicorn.error:224] Worker exiting (pid: 46453)
+[02/Jul/2016 18:18:20] INFO [gunicorn.error:224] Worker exiting (pid: 46453)
+[02/Jul/2016 18:18:22] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/apps.py", line 22, in ready
+    self.module.autodiscover()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/admin.py", line 9, in <module>
+    admin.site.register(Vehicle,DesignVehicle)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    raise AlreadyRegistered('The model %s is already registered' % model.__name__)
+AlreadyRegistered: The model Vehicle is already registered
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/apps.py", line 22, in ready
+    self.module.autodiscover()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/admin.py", line 9, in <module>
+    admin.site.register(Vehicle,DesignVehicle)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    raise AlreadyRegistered('The model %s is already registered' % model.__name__)
+AlreadyRegistered: The model Vehicle is already registered
+[02/Jul/2016 18:18:22] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/apps.py", line 22, in ready
+    self.module.autodiscover()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/admin.py", line 9, in <module>
+    admin.site.register(Vehicle,DesignVehicle)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    raise AlreadyRegistered('The model %s is already registered' % model.__name__)
+AlreadyRegistered: The model Vehicle is already registered
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/apps.py", line 22, in ready
+    self.module.autodiscover()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/vehicles/admin.py", line 9, in <module>
+    admin.site.register(Vehicle,DesignVehicle)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    raise AlreadyRegistered('The model %s is already registered' % model.__name__)
+AlreadyRegistered: The model Vehicle is already registered
+[02/Jul/2016 18:18:22] INFO [gunicorn.error:224] Worker exiting (pid: 46645)
+[02/Jul/2016 18:18:22] INFO [gunicorn.error:224] Worker exiting (pid: 46645)
+[02/Jul/2016 18:33:49] INFO [gunicorn.error:224] Worker exiting (pid: 46724)
+[02/Jul/2016 18:33:49] INFO [gunicorn.error:224] Worker exiting (pid: 46724)
+[02/Jul/2016 18:54:44] INFO [gunicorn.error:224] Worker exiting (pid: 46992)
+[02/Jul/2016 18:54:44] INFO [gunicorn.error:224] Worker exiting (pid: 46992)

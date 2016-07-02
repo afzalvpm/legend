@@ -1,0 +1,606 @@
+[04/Apr/2016 11:02:03] ERROR [django.request:256] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
+    url(r'^home/', include('app.home.urls')),
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
+    url(r'abc/$', views.faq, name='index'),
+AttributeError: 'module' object has no attribute 'faq'
+[04/Apr/2016 11:02:17] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:02:17] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/urls.py modified
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/urls.py modified
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker exiting (pid: 14524)
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker exiting (pid: 14524)
+[04/Apr/2016 11:08:42] ERROR [django.request:256] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
+    url(r'^home/', include('app.home.urls')),
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+[04/Apr/2016 11:08:50] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:08:50] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:08:51] INFO [gunicorn.error:224] Worker exiting (pid: 14573)
+[04/Apr/2016 11:08:51] INFO [gunicorn.error:224] Worker exiting (pid: 14573)
+[04/Apr/2016 11:08:54] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:08:55] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker exiting (pid: 14598)
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker exiting (pid: 14598)
+[04/Apr/2016 11:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 14603)
+[04/Apr/2016 11:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 14603)
+[04/Apr/2016 11:38:54] INFO [gunicorn.error:224] Worker exiting (pid: 14634)
+[04/Apr/2016 11:38:54] INFO [gunicorn.error:224] Worker exiting (pid: 14634)
+[04/Apr/2016 11:48:20] INFO [gunicorn.error:224] Worker exiting (pid: 14638)
+[04/Apr/2016 11:48:20] INFO [gunicorn.error:224] Worker exiting (pid: 14638)
+[04/Apr/2016 12:03:55] INFO [gunicorn.error:224] Worker exiting (pid: 14657)
+[04/Apr/2016 12:03:55] INFO [gunicorn.error:224] Worker exiting (pid: 14657)
+[04/Apr/2016 12:12:49] INFO [gunicorn.error:224] Worker exiting (pid: 14801)
+[04/Apr/2016 12:12:49] INFO [gunicorn.error:224] Worker exiting (pid: 14801)
+[04/Apr/2016 12:16:06] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 12:16:07] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 12:19:07] INFO [gunicorn.error:224] Worker exiting (pid: 14981)
+[04/Apr/2016 12:19:07] INFO [gunicorn.error:224] Worker exiting (pid: 14981)
+[04/Apr/2016 12:23:32] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:01] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:17] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:19] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:22] INFO [gunicorn.error:224] Worker exiting (pid: 15004)
+[04/Apr/2016 12:24:22] INFO [gunicorn.error:224] Worker exiting (pid: 15004)
+[04/Apr/2016 12:24:37] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:26:14] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 12:28:17] INFO [gunicorn.error:224] Worker exiting (pid: 15013)
+[04/Apr/2016 12:28:17] INFO [gunicorn.error:224] Worker exiting (pid: 15013)
+[04/Apr/2016 12:36:18] INFO [gunicorn.error:224] Worker exiting (pid: 15038)
+[04/Apr/2016 12:36:18] INFO [gunicorn.error:224] Worker exiting (pid: 15038)
+[04/Apr/2016 12:36:39] INFO [gunicorn.error:224] Worker exiting (pid: 15068)
+[04/Apr/2016 12:36:39] INFO [gunicorn.error:224] Worker exiting (pid: 15068)
+[04/Apr/2016 13:13:53] INFO [gunicorn.error:224] Worker exiting (pid: 15087)
+[04/Apr/2016 13:13:53] INFO [gunicorn.error:224] Worker exiting (pid: 15087)
+[04/Apr/2016 13:21:19] INFO [gunicorn.error:224] Worker exiting (pid: 15169)
+[04/Apr/2016 13:21:19] INFO [gunicorn.error:224] Worker exiting (pid: 15169)
+[04/Apr/2016 13:34:41] INFO [gunicorn.error:224] Worker exiting (pid: 15188)
+[04/Apr/2016 13:34:41] INFO [gunicorn.error:224] Worker exiting (pid: 15188)
+[04/Apr/2016 14:09:21] INFO [gunicorn.error:224] Worker exiting (pid: 19897)
+[04/Apr/2016 14:09:21] INFO [gunicorn.error:224] Worker exiting (pid: 19897)
+[04/Apr/2016 14:48:48] INFO [gunicorn.error:224] Worker exiting (pid: 20025)
+[04/Apr/2016 14:48:48] INFO [gunicorn.error:224] Worker exiting (pid: 20025)
+[04/Apr/2016 14:57:41] INFO [gunicorn.error:224] Worker exiting (pid: 20059)
+[04/Apr/2016 14:57:41] INFO [gunicorn.error:224] Worker exiting (pid: 20059)
+[04/Apr/2016 15:02:37] INFO [gunicorn.error:224] Worker exiting (pid: 20087)
+[04/Apr/2016 15:02:37] INFO [gunicorn.error:224] Worker exiting (pid: 20087)
+[04/Apr/2016 18:10:00] INFO [gunicorn.error:224] Worker exiting (pid: 20103)
+[04/Apr/2016 18:10:00] INFO [gunicorn.error:224] Worker exiting (pid: 20103)
+[05/Apr/2016 04:37:28] INFO [gunicorn.error:224] Worker exiting (pid: 20194)
+[05/Apr/2016 04:37:28] INFO [gunicorn.error:224] Worker exiting (pid: 20194)
+[05/Apr/2016 05:13:55] INFO [gunicorn.error:224] Worker exiting (pid: 20224)
+[05/Apr/2016 05:13:55] INFO [gunicorn.error:224] Worker exiting (pid: 20224)
+[05/Apr/2016 05:19:12] WARNING [django.request:170] Not Found: /
+[05/Apr/2016 05:34:27] INFO [gunicorn.error:224] Worker exiting (pid: 20402)
+[05/Apr/2016 05:34:27] INFO [gunicorn.error:224] Worker exiting (pid: 20402)
+[05/Apr/2016 06:13:16] INFO [gunicorn.error:224] Worker exiting (pid: 20782)
+[05/Apr/2016 06:13:16] INFO [gunicorn.error:224] Worker exiting (pid: 20782)
+[05/Apr/2016 06:23:15] INFO [gunicorn.error:224] Worker exiting (pid: 21121)
+[05/Apr/2016 06:23:15] INFO [gunicorn.error:224] Worker exiting (pid: 21121)
+[05/Apr/2016 07:03:56] INFO [gunicorn.error:224] Worker exiting (pid: 21268)
+[05/Apr/2016 07:03:56] INFO [gunicorn.error:224] Worker exiting (pid: 21268)
+[05/Apr/2016 07:12:21] INFO [gunicorn.error:224] Worker exiting (pid: 21584)
+[05/Apr/2016 07:12:21] INFO [gunicorn.error:224] Worker exiting (pid: 21584)
+[05/Apr/2016 07:42:36] INFO [gunicorn.error:224] Worker exiting (pid: 21864)
+[05/Apr/2016 07:42:36] INFO [gunicorn.error:224] Worker exiting (pid: 21864)
+[02/Jul/2016 15:32:22] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named djrill
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named djrill
+[02/Jul/2016 15:32:22] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named djrill
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named djrill
+[02/Jul/2016 15:32:22] INFO [gunicorn.error:224] Worker exiting (pid: 43510)
+[02/Jul/2016 15:32:22] INFO [gunicorn.error:224] Worker exiting (pid: 43510)
+[02/Jul/2016 15:34:07] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+[02/Jul/2016 15:34:07] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+[02/Jul/2016 15:34:07] INFO [gunicorn.error:224] Worker exiting (pid: 43566)
+[02/Jul/2016 15:34:07] INFO [gunicorn.error:224] Worker exiting (pid: 43566)
+[02/Jul/2016 15:34:56] ERROR [django.request:284] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/urls.py", line 8, in <module>
+    url('', include('social.apps.django_app.urls', namespace='social')),
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app.urls
+[02/Jul/2016 15:34:59] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/urls.py", line 8, in <module>
+    url('', include('social.apps.django_app.urls', namespace='social')),
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app.urls
+[02/Jul/2016 15:35:15] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/main/settings/development.py modified
+[02/Jul/2016 15:35:15] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/main/settings/development.py modified
+[02/Jul/2016 15:35:15] INFO [gunicorn.error:224] Worker exiting (pid: 43573)
+[02/Jul/2016 15:35:15] INFO [gunicorn.error:224] Worker exiting (pid: 43573)
+[02/Jul/2016 15:35:16] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+[02/Jul/2016 15:35:16] ERROR [gunicorn.error:230] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named social.apps.django_app
+[02/Jul/2016 15:35:17] INFO [gunicorn.error:224] Worker exiting (pid: 43616)
+[02/Jul/2016 15:35:17] INFO [gunicorn.error:224] Worker exiting (pid: 43616)
+[02/Jul/2016 15:36:38] WARNING [django.request:182] Not Found: /
+[02/Jul/2016 15:36:38] WARNING [django.request:182] Not Found: /favicon.ico
+[02/Jul/2016 15:36:43] WARNING [django.request:182] Not Found: /home
+[02/Jul/2016 15:36:59] ERROR [django.request:284] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 234, in inner
+    if request.path == reverse('admin:logout', current_app=self.name):
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 568, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in app_dict
+    self._populate()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 316, in _populate
+    for name in pattern.reverse_dict:
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in reverse_dict
+    self._populate()
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 334, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 255, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/utils/lru_cache.py", line 100, in wrapper
+    result = user_function(*args, **kwds)
+  File "/Users/Afxal/workspace/newenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 115, in get_callable
+    mod = import_module(mod_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/freelancing/legendary-packers/app/accounts/views.py", line 1, in <module>
+    import simplejson
+ImportError: No module named simplejson
+[02/Jul/2016 15:37:16] INFO [gunicorn.error:224] Worker exiting (pid: 43683)
+[02/Jul/2016 15:37:16] INFO [gunicorn.error:224] Worker exiting (pid: 43683)
+[02/Jul/2016 15:37:36] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:37:36] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:37:43] INFO [gunicorn.error:224] Worker exiting (pid: 43728)
+[02/Jul/2016 15:37:43] INFO [gunicorn.error:224] Worker exiting (pid: 43728)
+[02/Jul/2016 15:38:16] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:38:16] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:38:18] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:38:18] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:39:53] WARNING [django.request:182] Not Found: /
+[02/Jul/2016 15:40:07] WARNING [django.request:182] Not Found: /home
+[02/Jul/2016 15:40:09] WARNING [django.request:182] Not Found: /favicon.ico
+[02/Jul/2016 15:40:16] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:40:16] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:42:24] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:42:24] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:42:31] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:42:31] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:42:37] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:42:37] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:43:07] INFO [gunicorn.error:224] Worker exiting (pid: 43741)
+[02/Jul/2016 15:43:07] INFO [gunicorn.error:224] Worker exiting (pid: 43741)
+[02/Jul/2016 15:43:38] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:43:38] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:44:08] INFO [gunicorn.error:224] Worker exiting (pid: 43792)
+[02/Jul/2016 15:44:08] INFO [gunicorn.error:224] Worker exiting (pid: 43792)
+[02/Jul/2016 15:46:54] INFO [gunicorn.error:224] Worker exiting (pid: 43799)
+[02/Jul/2016 15:46:54] INFO [gunicorn.error:224] Worker exiting (pid: 43799)
+[02/Jul/2016 15:49:33] WARNING [django.request:182] Not Found: /static/admin/css/base.css
+[02/Jul/2016 15:49:33] WARNING [django.request:182] Not Found: /static/admin/css/login.css
+[02/Jul/2016 15:50:52] INFO [gunicorn.error:224] Worker exiting (pid: 43965)
+[02/Jul/2016 15:50:52] INFO [gunicorn.error:224] Worker exiting (pid: 43965)
+[02/Jul/2016 15:54:42] WARNING [django.request:182] Not Found: /
+[02/Jul/2016 15:54:47] WARNING [django.request:182] Not Found: /admin
+[02/Jul/2016 15:55:20] INFO [gunicorn.error:224] Worker exiting (pid: 44099)
+[02/Jul/2016 15:55:20] INFO [gunicorn.error:224] Worker exiting (pid: 44099)
+[02/Jul/2016 15:56:52] INFO [gunicorn.error:224] Worker exiting (pid: 44250)
+[02/Jul/2016 15:56:52] INFO [gunicorn.error:224] Worker exiting (pid: 44250)
+[02/Jul/2016 16:22:26] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/accounts/views.py modified
+[02/Jul/2016 16:22:26] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/accounts/views.py modified
+[02/Jul/2016 16:22:26] INFO [gunicorn.error:224] Worker exiting (pid: 44746)
+[02/Jul/2016 16:22:26] INFO [gunicorn.error:224] Worker exiting (pid: 44746)
+[02/Jul/2016 16:23:47] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/accounts/admin.py modified
+[02/Jul/2016 16:23:47] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/accounts/admin.py modified
+[02/Jul/2016 16:23:47] INFO [gunicorn.error:224] Worker exiting (pid: 44781)
+[02/Jul/2016 16:23:47] INFO [gunicorn.error:224] Worker exiting (pid: 44781)
+[02/Jul/2016 16:24:34] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/accounts/admin.py modified
+[02/Jul/2016 16:24:34] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/freelancing/legendary-packers/app/accounts/admin.py modified
+[02/Jul/2016 16:24:34] INFO [gunicorn.error:224] Worker exiting (pid: 44852)
+[02/Jul/2016 16:24:34] INFO [gunicorn.error:224] Worker exiting (pid: 44852)
